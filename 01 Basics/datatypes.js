@@ -67,6 +67,7 @@ console.log(emptyValue); //null
 
 //To determine the current type of the value stored in a variable, you use the typeof operator:
 console.log(typeof age); //number
+console.log(typeof name); //string
 
 
 
