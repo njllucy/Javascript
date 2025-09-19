@@ -1,6 +1,6 @@
 //Total 9 main types
 
-//1)Primitive Datatypes
+//1)Primitive Datatypes 7 categories -> Number,String,Boolean,null,undefined,symbol,BigInt
 //1.1 Number 
 let age = 25;
 let temp=-25;
@@ -29,6 +29,10 @@ console.log(s1);
 let s = Symbol('foo');
 console.log(s);
 
+//Reference type is also called non-primitive
+//Array,Objects,Functions
+
+
 //2)Structural Types
   //2.1 Object  
 let emptyObject = {};
@@ -40,7 +44,7 @@ console.log(person); //accessing object
 console.log(person.name); //accessing name property of object
 //Object can hold another object
 let student = {
-    name : 'Nadia',
+    Name : 'Nadia',
     age : 23,
     marks : {
         math: 50,
@@ -53,8 +57,8 @@ console.log(student.marks.physics); //accessing nested object property
    //callable
 //2.2 Arrays -> collectipn of values
 const number = [2,3,'js','python',true,{name:'Nadia', age:25}]; // we can store multiple types of data in an array
-console.log(number);//accessing whole array
-console.log(number[4]); //accessing 4th index value of array
+// console.log(number);//accessing whole array
+// console.log(number[4]); //accessing 4th index value of array
 //2.3 Maps
 //2.4 Sets
 //2.5 Date
@@ -63,11 +67,21 @@ console.log(number[4]); //accessing 4th index value of array
 //3.1 null -> null is a special value that represents "no value" or "empty value".
 // It is often used to indicate the absence of an object or a non-existent reference.
 let emptyValue = null;
-console.log(emptyValue); //null
+// console.log(emptyValue); //null
 
 //To determine the current type of the value stored in a variable, you use the typeof operator:
-console.log(typeof age); //number
-console.log(typeof name); //string
+//console.log(typeof age); //number
+// console.log(typeof Name); //string
+
+
+let isLoggedIn=" "
+let booleanIsLoggedIn = Boolean(isloggedIn);
+console.log(booleanIsLoggedIn);
+
+
+const score = '';
+console.log(typeof score); //string
+
 
 
 
