@@ -118,4 +118,20 @@ console.log(true && 3>2); //true
 console.log(3>2>1); //true
 
 
+//// https://262.ecma-international.org/5.1/#sec-11.4.3
+/*
 
+Type	    Result
+    
+Undefined	"undefined"
+Null	    "object" (reason)
+Boolean	    "boolean"
+Number	    "number"
+BigInt	    "bigint"
+String	    "string"
+Symbol	    "symbol"
+Function    (implements [[Call]] in ECMA-262 terms; classes are functions as well)	"function"
+Any other    "object"
+object	
+
+*/
