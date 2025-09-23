@@ -52,3 +52,4 @@ console.log(sum(1, 2, 3, 4)); // 10
 arguments = old, array-like, function-scope only
 ...args = modern, real array, works with arrow functions too
  */
+
