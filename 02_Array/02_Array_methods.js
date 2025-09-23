@@ -1,8 +1,10 @@
 /*
+
 Array Methods:
 forEach, map, filter, reduce, join.
 shift, unshift, pop, push, length.
 splice, slice, sort, delete, find, findIndex, every, some.
+
 */
 
 //1. foreach loop
@@ -315,3 +317,23 @@ console.log([2,4,6].every(n=>n%2===0)); // true
 console.log([1,3,4].some(n=>n%2===0)); // true
 
 
+//19.spread method to add /concat two or more  arrays
+//The spread operator (...) in JavaScript is used to “spread” elements of an array (or properties of an object) into another array/object.
+let a = [1, 2];
+let b = [3, 4];
+let merged = [...a, ...b];
+console.log(merged); // [1, 2, 3, 4]
+
+//20.What is Flattening?
+//Flattening means converting a nested array into a single-level array.
+let arrayy = [1, [2, 3], [4, [5, 6]]];
+
+console.log(arrayy.flat());    // [1, 2, 3, 4, [5, 6]]
+console.log(arrayy.flat(2));     // [1, 2, 3, 4, 5, 6]
+console.log(arrayy.flat(Infinity)); // Flattens completely
+
+
+//interesting case
+console.log(Array.isArray("Nadia"));
+console.log(Array.from("Nadia"));
+console.log(Array.from({name : "Nadia"}));

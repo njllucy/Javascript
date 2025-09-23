@@ -17,7 +17,7 @@ let score= new Array(10); //if we want to specify size
 
 const languages = ['Javascript','C++','Python'];
 
-//Accessing JavaScript array elements -> Arrays are zero based indexed.It starts at index 0 upto length()-1.
+//Accessing JavaScript array elements -> Arrays are zero based indexed.It starts at index 0 upto length-1.
 //To acces an element from an array we have to specify the index in the square brackets[].
 
 console.log(languages[1]); //accessing 1st index element this will print C++.
